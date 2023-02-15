@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2" parallel ="classes">
+  <test thread-count="5" name="ChromeTest">
+  <parameter name="browser123" value="Chrome"/>
+    <classes>
+      <class name="TestNGNop.VerificationofnopcomTestNg"/>
+      <class name="TestNGNop.Verificationoflink"/>
+      <class name="TestNGNop.VerificationofbookTestNG"/>
+    </classes>
+  </test> <!-- ChromeTest -->
+  
+    <test thread-count="5" name="firefoxTest">
+  <parameter name="browser123" value="Firefox"/>
+   <classes>
+      <class name="TestNGNop.VerificationofnopcomTestNg"/>
+      <class name="TestNGNop.Verificationoflink"/>
+      <class name="TestNGNop.VerificationofbookTestNG"/>
+    </classes>
+   
+  </test> <!-- FirefoxTest -->
+
+  
+  <test thread-count="5" name="EdgeTest">
+  <parameter name="browser123" value="Edge"/>
+    <classes>
+      <class name="TestNGNop.VerificationofnopcomTestNg"/>
+      <class name="TestNGNop.Verificationoflink"/>
+      <class name="TestNGNop.VerificationofbookTestNG"/>
+    </classes>
+  </test> <!--EdgeTest -->
+  
+ 
+
+</suite> <!-- Suite -->
